@@ -1,0 +1,100 @@
+<header>
+	<a href="javascript:void(0)" class="logo"></a>
+	<div class="location">
+		<i class="ico_location"></i>
+		<input class="input_localizar" type="text" placeholder="Onde procurar seu lar?"/>
+		<div class="mobile_busca" id="new-goal-container">
+			<select class="distancia">
+				<option>+24km</option>
+				<option>+24km</option>
+				<option>+24km</option>
+			</select>
+			<select multiple="multiple" placeholder="Tipo de imóvel" onchange="console.log($(this).children(':selected').length)" class="testSelAll2">
+				<option value="LOFT">LOFT</option>
+				<option value="APARTAMENTO">APARTAMENTO</option>
+				<option value="CASA">CASA</option>
+				<option value="FLAT">FLAT</option>
+			</select>
+		</div>
+	</div>
+	
+	<nav class="navbar mobile-menu">
+		<label class="show-menu">
+			<a class="lines open-popup-link" href="#menu_mobile"></a>
+		</label>
+		<ul>
+			<li><a href="favoritos.php">Favoritos</a></li>
+			<li><a href="anuncie.php">Anuncie seu imóvel</a></li>
+			<li class="mhide"><i class="ico ico_user"></i></li>
+			<li class="right mhide"><a class="btn_border btn_full" routerLink="/cadastro">Cadastrar</a></li>
+			<li class="right mhide"><a class="btn_border btn_border_off open-popup-link" href="#test-popup">Login</a></li>
+		</ul>
+	</nav>
+	
+</header>
+
+<!--Popup Login-->
+<div id="test-popup" class="white-popup mfp-hide"> 
+	<div class="flex login">
+		<div class="flex buttons_login">
+			<div class="flex ">	
+				<h2>Login</h2>
+				<a href="javascript:void(0)" class="facebook redes">Criar conta com Facebook<i class="ico_facebook_w"></i></a>
+				<a href="javascript:void(0)" class="google redes">Criar conta com Google<i class="ico_google_w"></i></a>
+				<p class="aceite">Novo usuário? <br/><a href="javascript:void(0)">Fazer Cadastro</a></p>
+			</div>	
+		</div>
+		<div class="flex content_options ">
+			<div class="flex create">
+				<a href="javascript:void(0)" class="logo_modal"></a>
+				<img src="assets/images/wave_small.svg" class="top_wave"/>
+				<form class="">
+					<p>Faça Login inserindo seu dados abaixo:</p>
+					<div class="form-group">
+					  <label class="form-label" for="first">Email</label>
+					  <input id="first" class="form-input" type="text" />
+					</div>
+					<div class="form-group"> <!--Adiconar a classe .error quando a senha estiver errada-->
+					  <label class="form-label" for="last">Senha</label>
+					  <input id="last" class="form-input" type="password" />
+					</div>
+					<small class="error_message">Senha inválida</small><!--Adicionar display block quando a senha estiver errada-->
+					<a href="javascript:void(0)">Esqueceu a senha?</a>
+					<input type="submit" value="Login" class="btn_border_yellow w_small"/>
+				</form>
+				<img src="assets/images/wave_small.svg" class="bottom_wave"/>
+				<p class="aceite">Novo usuário? <a href="javascript:void(0)">Fazer Cadastro</a></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Popup menu deslogado mobile-->
+<div id="menu_mobile" class="white-popup mfp-hide mobile-menu"> 
+	<div class="menu_offline">
+		<div class="register">
+			<button title="Close (Esc)" type="button" class="mfp-close">×</button>
+			<div class="header_register">
+				<a href="javascript:void(0)" class="logo_modal"></a>
+				<div class="options">	
+					<h2>Crie uma conta e se torne um While</h2>
+					<a href="cadastro_dados_pessoais.php" class="btn_border_yellow send">Criar conta<i></i></a>
+					<img src="assets/images/wave_small_2.svg" class="bottom_wave small_wave"/>
+				</div>	
+			</div>	
+			<div class="content_options ">
+				<div class="flex create">
+					<p>Se você já um While faça o login</p>
+					<a href="cadastro_dados_pessoais.php" class="btn_border_yellow send">Entrar com Email<i></i></a>
+					<a href="javascript:void(0)" class="facebook redes">Login com Facebook<i class="ico_facebook_w"></i></a>
+					<a href="javascript:void(0)" class="google redes">Login com Google<i class="ico_google_w"></i></a>
+				</div>
+			</div>
+		</div>
+	
+		<ul class="brdr">
+			<li><a href="favoritos.php">Favoritos</a></li>
+			<li><a href="anuncie.php">Anuncie seu imóvel</a></li>
+		</ul>
+	</div>	
+</div>

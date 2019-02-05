@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.754 17.063">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #001414;
+      }
+
+      .cls-2 {
+        fill: #fee008;
+      }
+    </style>
+  </defs>
+  <g id="Group_5104" data-name="Group 5104" transform="translate(5549 -5867.737)">
+    <ellipse id="Ellipse_4" data-name="Ellipse 4" class="cls-1" cx="1.398" cy="1.398" rx="1.398" ry="1.398" transform="translate(-5546.203 5867.737) rotate(90)"/>
+    <ellipse id="Ellipse_5" data-name="Ellipse 5" class="cls-2" cx="1.398" cy="1.398" rx="1.398" ry="1.398" transform="translate(-5546.203 5875) rotate(90)"/>
+    <ellipse id="Ellipse_6" data-name="Ellipse 6" class="cls-1" cx="1.398" cy="1.398" rx="1.398" ry="1.398" transform="translate(-5546.203 5882) rotate(90)"/>
+    <rect id="Rectangle_22" data-name="Rectangle 22" class="cls-2" width="19.543" height="2.8" rx="1.4" transform="translate(-5543.789 5867.737)"/>
+    <rect id="Rectangle_23" data-name="Rectangle 23" class="cls-2" width="19.543" height="2.8" rx="1.4" transform="translate(-5543.789 5882)"/>
+    <rect id="Rectangle_24" data-name="Rectangle 24" class="cls-2" width="19.543" height="2.8" rx="1.4" transform="translate(-5543.789 5875)"/>
+  </g>
+</svg>

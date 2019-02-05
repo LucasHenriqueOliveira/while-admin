@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #f1f0ec;
+      }
+
+      .cls-2 {
+        fill: #eed11a;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_5329" data-name="Group 5329" transform="translate(-936.377 -448.244)">
+    <g id="Group_5318" data-name="Group 5318" transform="translate(936.377 448.244)">
+      <g id="Rectangle_40" data-name="Rectangle 40" class="cls-1" transform="translate(0)">
+        <rect class="cls-3" width="64" height="64" rx="32"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="63" height="63" rx="31.5"/>
+      </g>
+    </g>
+    <g id="Group_5321" data-name="Group 5321" transform="translate(959.661 467.92)">
+      <path id="Path_2575" data-name="Path 2575" class="cls-2" d="M24,4H14.9A3.9,3.9,0,0,0,11,7.9V26.1A3.9,3.9,0,0,0,14.9,30H24a3.9,3.9,0,0,0,3.9-3.9V7.9A3.9,3.9,0,0,0,24,4ZM14.9,5.95H24A1.95,1.95,0,0,1,25.95,7.9v.65h-13V7.9A1.95,1.95,0,0,1,14.9,5.95ZM25.95,10.5V22.2h-13V10.5ZM24,28.05H14.9a1.95,1.95,0,0,1-1.95-1.95V24.15h13V26.1A1.95,1.95,0,0,1,24,28.05Z" transform="translate(-11 -4)"/>
+      <ellipse id="Ellipse_9" data-name="Ellipse 9" class="cls-2" cx="1.898" cy="1.898" rx="1.898" ry="1.898" transform="translate(6.552 18.231)"/>
+    </g>
+  </g>
+</svg>

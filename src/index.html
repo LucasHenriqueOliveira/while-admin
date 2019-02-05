@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>While</title>
+  <base href="/">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>		
+		
+	<script src="assets/script/jquery.sumoselect.js"></script>
+	<link href="assets/style/sumoselect.css" rel="stylesheet" />
+		
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<link href="assets/style/magnific-popup.css" rel="stylesheet" />
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+        window.testSelAll = $('.testSelAll').SumoSelect({okCancelInMulti:true, selectAll:true });
+        window.testSelAll2 = $('.testSelAll2').SumoSelect({selectAll:true});
+    
+    //Popup
+    $('.open-popup-link').magnificPopup({
+      type:'inline',
+      midClick: true 
+    });
+    $(".input_localizar").click(function() {
+      $(".mobile_busca").addClass("show");
+    });
+    //Input animation
+    $('.form-input').focus(function(){
+      $(this).parents('.form-group').addClass('focused');
+    });
+
+    $('.form-input').blur(function(){
+      var inputValue = $(this).val();
+      if ( inputValue == "" ) {
+        $(this).removeClass('filled');
+        $(this).parents('.form-group').removeClass('focused');  
+        } else {
+          $(this).addClass('filled');
+        }
+      }) 
+    });
+    
+
+    $(function() {	
+      // Cria dropdown
+      $("<select />").appendTo("nav.sidebar");
+              
+      // Popula dropdown com itens do sidebar
+      $("nav.sidebar a").each(function() {
+      var el = $(this);
+      $("<option />", {
+        "value"   : el.attr("href"),
+        "text"    : el.text()
+      }).appendTo("nav select");
+      });
+      
+      
+      $("nav select").change(function() {
+      window.location = $(this).find("option:selected").val();
+      });
+    });
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

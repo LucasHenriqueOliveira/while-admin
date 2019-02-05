@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.149 17.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #595555;
+      }
+    </style>
+  </defs>
+  <path id="FB_Logo" data-name="FB Logo" class="cls-1" d="M5.11,9.217H7.585l.564-2.9H5.11v-2c0-.888.4-1.449,1.563-1.449H8.149V.121A18.007,18.007,0,0,0,6,0C3.867,0,2.55,1.429,2.55,4.054V6.315H0v2.9H2.55V17.25H5.11Z"/>
+</svg>

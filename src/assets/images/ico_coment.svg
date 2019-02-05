@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.854 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #595555;
+      }
+    </style>
+  </defs>
+  <g id="Group_5400" data-name="Group 5400" transform="translate(-4 -4.999)">
+    <g id="Group_5401" data-name="Group 5401" transform="translate(8 9.876)">
+      <ellipse id="Ellipse_15" data-name="Ellipse 15" class="cls-1" cx="1.221" cy="1.221" rx="1.221" ry="1.221"/>
+      <ellipse id="Ellipse_16" data-name="Ellipse 16" class="cls-1" cx="1.221" cy="1.221" rx="1.221" ry="1.221" transform="translate(2.984)"/>
+      <ellipse id="Ellipse_17" data-name="Ellipse 17" class="cls-1" cx="1.221" cy="1.221" rx="1.221" ry="1.221" transform="translate(5.968)"/>
+    </g>
+    <path id="Path_2610" data-name="Path 2610" class="cls-1" d="M14.337,5H10.484a6.435,6.435,0,0,0-6.494,6.01,6.317,6.317,0,0,0,6.317,6.625h1.685a.421.421,0,0,1,.421.421v2.3a.653.653,0,0,0,1.1.476l4.8-4.456a6.317,6.317,0,0,0,2.527-4.982A6.477,6.477,0,0,0,14.337,5Zm3.176,10.386-3.79,3.5a.038.038,0,0,1-.063-.029V17.634A1.263,1.263,0,0,0,12.4,16.371H10.454a5.155,5.155,0,0,1-5.18-4.565,5.054,5.054,0,0,1,5.033-5.542h4.212a5.054,5.054,0,0,1,2.994,9.122Z" transform="translate(0.018)"/>
+  </g>
+</svg>

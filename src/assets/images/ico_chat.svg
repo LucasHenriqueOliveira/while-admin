@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #f1f0ec;
+      }
+
+      .cls-2 {
+        fill: #eed11a;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_5341" data-name="Group 5341" transform="translate(-1172 -364)">
+    <g id="Group_5318" data-name="Group 5318" transform="translate(1172 364)">
+      <g id="Rectangle_40" data-name="Rectangle 40" class="cls-1" transform="translate(0)">
+        <rect class="cls-3" width="64" height="64" rx="32"/>
+        <rect class="cls-4" x="0.5" y="0.5" width="63" height="63" rx="31.5"/>
+      </g>
+    </g>
+    <g id="Group_5159" data-name="Group 5159" transform="translate(1186 380)">
+      <path id="Path_2576" data-name="Path 2576" class="cls-2" d="M8,6H26.67a4,4,0,0,1,4,4V21.336a4,4,0,0,1-4,4v4a.667.667,0,0,1-1.033.553l-6.968-4.554H8a4,4,0,0,1-4-4V10A4,4,0,0,1,8,6ZM6,21.336a2,2,0,0,0,2,2H19.075a.667.667,0,0,1,.367.113l5.227,3.394V24a.667.667,0,0,1,.667-.667H26.67a2,2,0,0,0,2-2V10a2,2,0,0,0-2-2H8a2,2,0,0,0-2,2Z" transform="translate(0 0)"/>
+      <ellipse id="Ellipse_10" data-name="Ellipse 10" class="cls-2" cx="2" cy="2" rx="2" ry="2" transform="translate(21.336 13.668)"/>
+      <ellipse id="Ellipse_11" data-name="Ellipse 11" class="cls-2" cx="2" cy="2" rx="2" ry="2" transform="translate(15.335 13.668)"/>
+      <ellipse id="Ellipse_12" data-name="Ellipse 12" class="cls-2" cx="2" cy="2" rx="2" ry="2" transform="translate(9.334 13.668)"/>
+    </g>
+  </g>
+</svg>

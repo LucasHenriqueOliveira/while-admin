@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.287 16.982">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(89,85,85,0.1);
+        stroke: rgba(255,255,255,0.9);
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="noun_Heart_70518" transform="translate(1 1)">
+    <path id="Path_2082" data-name="Path 2082" class="cls-1" d="M8.154,18.826a.341.341,0,0,1-.252-.113L1.115,11.207a.468.468,0,0,1-.037-.048A4.423,4.423,0,1,1,8.143,5.872a4.423,4.423,0,1,1,7.062,5.29.353.353,0,0,1-.034.045L8.405,18.714a.334.334,0,0,1-.251.112Z" transform="translate(0 -3.844)"/>
+  </g>
+</svg>
