@@ -8,19 +8,25 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class AppComponent {
   title = 'while-admin';
-  withHeader = true;
-  withFooter = true;
 
-  constructor(private router: Router) {
-    router.events.subscribe(event => {
+  constructor(private router: Router) { }
 
-      if (event instanceof NavigationEnd ) {
-        if (event.url === '/cadastro' || event.url === '/cadastro-dados-pessoais'
-        || event.url === '/cadastro-telefone' || event.url === '/cadastro-interesses') {
-          this.withHeader = false;
-          this.withFooter = false;
-        }
-      }
-    });
+  withHeader() {
+    if (this.router.url === '/cadastro' || this.router.url === '/cadastro-dados-pessoais'
+        || this.router.url === '/cadastro-telefone' || this.router.url === '/cadastro-interesses') {
+          return false;
+    } else {
+      return true;
+    }
+  }
+
+  withFooter() {
+    if (this.router.url === '/cadastro' || this.router.url === '/cadastro-dados-pessoais'
+      || this.router.url === '/cadastro-telefone' || this.router.url === '/cadastro-interesses' ||
+      this.router.url === '/favoritos') {
+      return false;
+    } else {
+      return true;
+    }
   }
 }
