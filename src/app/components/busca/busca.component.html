@@ -1,0 +1,301 @@
+<div class="search_content flex">
+	<!--Inicio filtro web-->
+	<div class="tp_search mhide">
+		<form class="form_busca flex">
+			<div class="wrap_filter">
+				<select placeholder="Quartos" onchange="console.log($(this).children(':selected').length)" class="testSelAll2">
+					<option>Quartos </option>
+					<option>01 </option>
+					<option>02 </option>
+					<option>03 </option>
+					<option>+04</option>
+				</select>
+				<select placeholder="Garagem" onchange="console.log($(this).children(':selected').length)" class="testSelAll2">
+					<option>Garagem </option>
+					<option>01 </option>
+					<option>02 </option>
+					<option>03 </option>
+					<option>+04</option>
+				</select>
+				<select placeholder="Area" onchange="console.log($(this).children(':selected').length)" class="testSelAll2">
+					<option>Area </option>
+					<option>01 </option>
+					<option>02 </option>
+					<option>03 </option>
+					<option>+04</option>
+				</select>
+			</div>
+			<div class="values_search">
+				<label class="buttons_switch">
+					<input type="checkbox" checked>
+					<span class="switch_left">Valor Aluguel</span>
+					<span class="switch_right">Valor Total</span>
+					<div class="bg_switch"></div>
+				</label>
+			</div>
+			<div class="wrap_filter">
+				<input type="text" class="height-52" placeholder="R$ 2.000"/>&nbsp;&nbsp;até&nbsp;&nbsp;
+				<input type="text" class="height-52" placeholder="R$ 5.000"/>
+			</div>
+			<input type="submit" class="btn_border btn_full right" value="Filtrar">
+		</form>
+	</div>
+	<!--Fim filtro web-->
+	
+	<!--Inicio filtro telas menores que 900px-->
+	<div class="mobile_tp_search mshow">
+		
+		<p class="left">(54151) Imóveis</p>
+		<input id="mobile_tp_show" type="checkbox"/>
+		<label for="mobile_tp_show" class="show-menu btn_border btn_full right">
+			<span></span>
+		</label>
+		<div class="bdr_bottom clear"></div>
+		<form class="mp_show_form">
+			<div class="room_wrap">
+				<a href="javascript:void()">01</a>
+				<a href="javascript:void()" class="selected">02</a>
+				<a href="javascript:void()">03</a>
+				<a href="javascript:void()">+04</a>
+			</div>
+			<select placeholder="Garagem" onchange="console.log($(this).children(':selected').length)" class="testSelAll2">
+				<option>Garagem </option>
+				<option>01 </option>
+				<option>02 </option>
+				<option>03 </option>
+				<option>+04</option>
+			</select>
+			<select placeholder="Area" onchange="console.log($(this).children(':selected').length)" class="testSelAll2">
+				<option>Area </option>
+				<option>01 </option>
+				<option>02 </option>
+				<option>03 </option>
+				<option>+04</option>
+			</select>
+			
+			<div class="values_search">
+				<label class="buttons_switch">
+					<input type="checkbox" checked>
+					<span class="switch_left">Valor Aluguel</span>
+					<span class="switch_right">Valor Total</span>
+					<div class="bg_switch"></div>
+				</label>
+			</div>
+			<div class="wrap_filter">
+				<input type="text" class="height-52" placeholder="R$ 2.000"/>&nbsp;&nbsp;até&nbsp;&nbsp;
+				<input type="text" class="height-52" placeholder="R$ 5.000"/>
+			</div>
+			<input type="submit" value="Filtrar" class="btn_border btn_full right"/>
+		</form>
+	</div>	
+	<!--Fim filtro telas menores que 900px-->
+	
+	<!--<div class="map">mapa</div>-->
+	
+	<div class="footer_search flex">
+		<div class="tp_footer_search flex">
+			<div class="results_find">
+				<p>123456 resultados encontrados</p>
+			</div>
+			<div class="order_search flex">
+				<p>Ordernar por:</p>
+				<select>
+					<option>Mais recente</option>
+					<option>Menor preço</option>
+					<option>Maior preço</option>
+				</select>
+			</div>
+		</div>
+		<div class="results_show flex">
+			<div class="fav_content">
+				<div class="house_photo">
+					<img src="assets/images/Background.png"/>
+					<span class="ref">Ref 2631</span>
+					<a class="fav" href="javascript:void(0)">
+						<i class="ico_fav"></i>
+					</a>
+					<div class="descrition">
+						<p>Apartamento 45m²</p>
+						<small>Rua João Bernardo Magalhães Centro</small>
+					</div>		
+				</div>
+				<div class="value">
+					<h3>Aluguel <span>R$ 900,00</span></h3>
+					<p>IPTU R$ 65,47 | Condomínio R$ 260,00</p>
+				</div>
+				<div class="bath">
+					<span><i class="ico_bed"></i> 03</span>
+					<span><i class="ico_bath"></i> 02</span>
+				</div>
+			</div>
+			<div class="fav_content">
+				<div class="house_photo">
+					<img src="assets/images/Background.png"/>
+					<span class="ref">Ref 2631</span>
+					<a class="fav" href="javascript:void(0)">
+						<i class="ico_fav"></i>
+					</a>
+					<div class="descrition">
+						<p>Apartamento 45m²</p>
+						<small>Rua João Bernardo Magalhães Centro</small>
+					</div>		
+				</div>
+				<div class="value">
+					<h3>Aluguel <span>R$ 900,00</span></h3>
+					<p>IPTU R$ 65,47 | Condomínio R$ 260,00</p>
+				</div>
+				<div class="bath">
+					<span><i class="ico_bed"></i> 03</span>
+					<span><i class="ico_bath"></i> 02</span>
+				</div>
+			</div>
+			<div class="fav_content">
+				<div class="house_photo">
+					<img src="assets/images/Background.png"/>
+					<span class="ref">Ref 2631</span>
+					<a class="fav" href="javascript:void(0)">
+						<i class="ico_fav"></i>
+					</a>
+					<div class="descrition">
+						<p>Apartamento 45m²</p>
+						<small>Rua João Bernardo Magalhães Centro</small>
+					</div>		
+				</div>
+				<div class="value">
+					<h3>Aluguel <span>R$ 900,00</span></h3>
+					<p>IPTU R$ 65,47 | Condomínio R$ 260,00</p>
+				</div>
+				<div class="bath">
+					<span><i class="ico_bed"></i> 03</span>
+					<span><i class="ico_bath"></i> 02</span>
+				</div>
+			</div>
+			<div class="fav_content">
+				<div class="house_photo">
+					<img src="assets/images/Background.png"/>
+					<span class="ref">Ref 2631</span>
+					<a class="fav" href="javascript:void(0)">
+						<i class="ico_fav"></i>
+					</a>
+					<div class="descrition">
+						<p>Apartamento 45m²</p>
+						<small>Rua João Bernardo Magalhães Centro</small>
+					</div>		
+				</div>
+				<div class="value">
+					<h3>Aluguel <span>R$ 900,00</span></h3>
+					<p>IPTU R$ 65,47 | Condomínio R$ 260,00</p>
+				</div>
+				<div class="bath">
+					<span><i class="ico_bed"></i> 03</span>
+					<span><i class="ico_bath"></i> 02</span>
+				</div>
+			</div>
+			<div class="fav_content">
+				<div class="house_photo">
+					<img src="assets/images/Background.png"/>
+					<span class="ref">Ref 2631</span>
+					<a class="fav" href="javascript:void(0)">
+						<i class="ico_fav"></i>
+					</a>
+					<div class="descrition">
+						<p>Apartamento 45m²</p>
+						<small>Rua João Bernardo Magalhães Centro</small>
+					</div>		
+				</div>
+				<div class="value">
+					<h3>Aluguel <span>R$ 900,00</span></h3>
+					<p>IPTU R$ 65,47 | Condomínio R$ 260,00</p>
+				</div>
+				<div class="bath">
+					<span><i class="ico_bed"></i> 03</span>
+					<span><i class="ico_bath"></i> 02</span>
+				</div>
+			</div>
+			<div class="fav_content">
+				<div class="house_photo">
+					<img src="assets/images/Background.png"/>
+					<span class="ref">Ref 2631</span>
+					<a class="fav" href="javascript:void(0)">
+						<i class="ico_fav"></i>
+					</a>
+					<div class="descrition">
+						<p>Apartamento 45m²</p>
+						<small>Rua João Bernardo Magalhães Centro</small>
+					</div>		
+				</div>
+				<div class="value">
+					<h3>Aluguel <span>R$ 900,00</span></h3>
+					<p>IPTU R$ 65,47 | Condomínio R$ 260,00</p>
+				</div>
+				<div class="bath">
+					<span><i class="ico_bed"></i> 03</span>
+					<span><i class="ico_bath"></i> 02</span>
+				</div>
+			</div>
+			<div class="fav_content">
+				<div class="house_photo">
+					<img src="assets/images/Background.png"/>
+					<span class="ref">Ref 2631</span>
+					<a class="fav" href="javascript:void(0)">
+						<i class="ico_fav"></i>
+					</a>
+					<div class="descrition">
+						<p>Apartamento 45m²</p>
+						<small>Rua João Bernardo Magalhães Centro</small>
+					</div>		
+				</div>
+				<div class="value">
+					<h3>Aluguel <span>R$ 900,00</span></h3>
+					<p>IPTU R$ 65,47 | Condomínio R$ 260,00</p>
+				</div>
+				<div class="bath">
+					<span><i class="ico_bed"></i> 03</span>
+					<span><i class="ico_bath"></i> 02</span>
+				</div>
+			</div>
+			<div class="fav_content">
+				<div class="house_photo">
+					<img src="assets/images/Background.png"/>
+					<span class="ref">Ref 2631</span>
+					<a class="fav" href="javascript:void(0)">
+						<i class="ico_fav"></i>
+					</a>
+					<div class="descrition">
+						<p>Apartamento 45m²</p>
+						<small>Rua João Bernardo Magalhães Centro</small>
+					</div>		
+				</div>
+				<div class="value">
+					<h3>Aluguel <span>R$ 900,00</span></h3>
+					<p>IPTU R$ 65,47 | Condomínio R$ 260,00</p>
+				</div>
+				<div class="bath">
+					<span><i class="ico_bed"></i> 03</span>
+					<span><i class="ico_bath"></i> 02</span>
+				</div>
+			</div>
+			<div class="fav_content">
+				<div class="house_photo">
+					<img src="assets/images/Background.png"/>
+					<span class="ref">Ref 2631</span>
+					<a class="fav" href="javascript:void(0)">
+						<i class="ico_fav"></i>
+					</a>
+					<div class="descrition">
+						<p>Apartamento 45m²</p>
+						<small>Rua João Bernardo Magalhães Centro</small>
+					</div>		
+				</div>
+				<div class="value">
+					<h3>Aluguel <span>R$ 900,00</span></h3>
+					<p>IPTU R$ 65,47 | Condomínio R$ 260,00</p>
+				</div>
+				<div class="bath">
+					<span><i class="ico_bed"></i> 03</span>
+					<span><i class="ico_bath"></i> 02</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
