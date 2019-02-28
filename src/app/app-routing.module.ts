@@ -6,6 +6,11 @@ import { CadastroDadosPessoaisComponent } from './components/cadastro-dados-pess
 import { CadastroTelefoneComponent } from './components/cadastro-telefone/cadastro-telefone.component';
 import { CadastroInteressesComponent } from './components/cadastro-interesses/cadastro-interesses.component';
 import { FavoritosComponent } from './components/favoritos/favoritos.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { ContatoComponent } from './components/contato/contato.component';
+import { AboutComponent } from './components/about/about.component';
+import { BuscaComponent } from './components/busca/busca.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
 
 const appRoutes: Routes = [
   {
@@ -36,11 +41,31 @@ const appRoutes: Routes = [
     path: 'favoritos',
     component: FavoritosComponent,
   },
+  {
+    path: 'faq',
+    component: FaqComponent,
+  },
+  {
+    path: 'contato',
+    component: ContatoComponent,
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
+  },
+  {
+    path: 'busca',
+    component: BuscaComponent,
+  },
+  {
+    path: 'perfil',
+    component: PerfilComponent,
+  },
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes, {scrollPositionRestoration: 'enabled'})
   ],
   exports: [RouterModule]
 })

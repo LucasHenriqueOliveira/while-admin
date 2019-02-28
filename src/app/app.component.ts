@@ -23,7 +23,7 @@ export class AppComponent {
   withFooter() {
     if (this.router.url === '/cadastro' || this.router.url === '/cadastro-dados-pessoais'
       || this.router.url === '/cadastro-telefone' || this.router.url === '/cadastro-interesses' ||
-      this.router.url === '/favoritos') {
+      this.router.url === '/favoritos' || this.router.url === '/busca') {
       return false;
     } else {
       return true;

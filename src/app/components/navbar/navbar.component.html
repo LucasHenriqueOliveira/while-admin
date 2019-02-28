@@ -1,5 +1,6 @@
 <header>
 	<a routerLink="/" class="logo"></a>
+	<!--
 	<div class="location">
 		<i class="ico_location"></i>
 		<input class="input_localizar" type="text" placeholder="Onde procurar seu lar?"/>
@@ -17,6 +18,7 @@
 			</select>
 		</div>
 	</div>
+	-->
 	
 	<nav class="navbar mobile-menu">
 		<label class="show-menu">
@@ -24,46 +26,44 @@
 		</label>
 		<ul>
 			<li><a routerLink="/favoritos">Favoritos</a></li>
-			<li><a href="anuncie.php">Anuncie seu imóvel</a></li>
+			<li><a routerLink="/cadastro">Anuncie seu imóvel</a></li>
 			<li class="mhide"><i class="ico ico_user"></i></li>
 			<li class="right mhide"><a class="btn_border btn_full" routerLink="/cadastro">Cadastrar</a></li>
-			<li class="right mhide"><a class="btn_border btn_border_off open-popup-link" href="#test-popup">Login</a></li>
+			<li class="right mhide"><a class="btn_border btn_border_off open-popup-link cursor-pointer" (click)="openModal()">Login</a></li>
 		</ul>
 	</nav>
 	
 </header>
 
 <!--Popup Login-->
-<div id="test-popup" class="white-popup mfp-hide"> 
+<div id="test-popup" class="white-popup mfp-hide" [ngClass]="{ 'mfp-show': loginModal }"> 
 	<div class="flex login">
 		<div class="flex buttons_login">
 			<div class="flex ">	
 				<h2>Login</h2>
 				<a href="javascript:void(0)" class="facebook redes">Criar conta com Facebook<i class="ico_facebook_w"></i></a>
 				<a href="javascript:void(0)" class="google redes">Criar conta com Google<i class="ico_google_w"></i></a>
-				<p class="aceite">Novo usuário? <br/><a href="javascript:void(0)">Fazer Cadastro</a></p>
+				<p class="aceite">Novo usuário? <br/><a outerLink="/cadastro">Fazer Cadastro</a></p>
 			</div>	
 		</div>
 		<div class="flex content_options ">
 			<div class="flex create">
-				<a href="javascript:void(0)" class="logo_modal"></a>
+				<a outerLink="/" class="logo_modal"></a>
 				<img src="assets/images/wave_small.svg" class="top_wave"/>
-				<form class="">
+				<form #loginForm=ngForm (ngSubmit)="onSubmit()">
 					<p>Faça Login inserindo seu dados abaixo:</p>
 					<div class="form-group">
-					  <label class="form-label" for="first">Email</label>
-					  <input id="first" class="form-input" type="text" />
+					  <input id="first" class="form-input" type="text" placeholder="Email" [(ngModel)]="form.email" [ngModelOptions]="{standalone: true}" required />
 					</div>
 					<div class="form-group"> <!--Adiconar a classe .error quando a senha estiver errada-->
-					  <label class="form-label" for="last">Senha</label>
-					  <input id="last" class="form-input" type="password" />
+					  <input id="last" class="form-input" type="password" placeholder="Senha" [(ngModel)]="form.password" [ngModelOptions]="{standalone: true}" required />
 					</div>
 					<small class="error_message">Senha inválida</small><!--Adicionar display block quando a senha estiver errada-->
 					<a href="javascript:void(0)">Esqueceu a senha?</a>
-					<input type="submit" value="Login" class="btn_border_yellow w_small"/>
+					<input type="submit" value="Login" class="btn_border_yellow w_small" [disabled]="!loginForm.valid"/>
 				</form>
 				<img src="assets/images/wave_small.svg" class="bottom_wave"/>
-				<p class="aceite">Novo usuário? <a href="javascript:void(0)">Fazer Cadastro</a></p>
+				<p class="aceite">Novo usuário? <a routerLink="/cadastro">Fazer Cadastro</a></p>
 			</div>
 		</div>
 	</div>

@@ -752,7 +752,7 @@ footer .apps small{
 }
 .faq >div,
 .faq input{
-	width:100%;
+	width:92%;
 }
 .faq div >h2{
 	color:#595555;
@@ -1359,7 +1359,6 @@ input.search{
 /**Avaliacao usuario**/
 .perfil_user{
 	background:#FFF154;
-	height:;
 }
 .avaliacao{
 	margin-top:50px;
@@ -1840,7 +1839,7 @@ button.mfp-close{left:0!important; right:unset;}
 .tp_search .SumoSelect{
 	margin-right:20px;
 	margin-left:0;
-	width:170px;
+	width:130px;
 	
 }
 .tp_search .SumoSelect > .CaptionCont{
@@ -2198,10 +2197,24 @@ button.mfp-close{left:0!important; right:unset;}
 	width:400px;
 }
 
+.btn-pesquisar {
+	margin-left: -96px;
+	text-align: center;
+}
+.height-52 {
+	height: 52px !important;
+}
+.mfp-show {
+	display: block !important;
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+
 /**Fim Configuracoes**/
 
 /**Media Queries**/
-@media (max-device-width: 1236px){
+@media (max-device-width:1236px){
 	.mobile-menu ul {
 		width:450px;
 	}
@@ -2363,7 +2376,6 @@ button.mfp-close{left:0!important; right:unset;}
 	.fav_content .checkbox label{background:#fff;}
 	
 	/*PERFIL*/
-	.rate_star span{height:; width:;}
 	.mini_about{margin-bottom:20px;}
 	.box_coment .mini_about img{height:92px; margin-left:0; width:92px;}
 	.rate_star span{height:32px; width:32px;}
